@@ -78,6 +78,7 @@ section{padding:84px 0}
 .shead{margin-bottom:44px}
 .shead h2{font-size:clamp(2.6rem,6vw,4.4rem)}
 .shead p{color:var(--mut);max-width:560px;margin-top:8px}
+.gtitle{color:var(--red);font-size:clamp(3.4rem,9vw,6.5rem)}
 
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--bg2);border:1px solid var(--line);padding:30px;transition:.3s;position:relative;overflow:hidden}
@@ -107,7 +108,6 @@ section{padding:84px 0}
 .gal .ph img{width:100%;height:100%;object-fit:cover;transition:.4s}
 .gal .ph:hover img{transform:scale(1.07)}
 .gal .ph.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
-.gal .cap{position:absolute;left:0;bottom:0;width:100%;padding:10px 14px;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fff;z-index:2}
 
 .contact{background:var(--bg2);border:1px solid var(--line);padding:0;display:grid;grid-template-columns:1.2fr 1fr;overflow:hidden}
 .contact .l{padding:52px;position:relative}
@@ -257,13 +257,13 @@ footer .fright a:hover{color:var(--red)}
 
 <section id="galerie">
   <div class="wrap">
-    <div class="shead"><span class="tag">Galerie</span><h2>Unsere Projekte.</h2></div>
+    <div class="shead"><h2 class="gtitle">Galerie</h2></div>
     <div class="gal">
-      <div class="ph big"><img src="/bm-garage/assets/werkstatt-2.jpg" alt="Werkstatthalle BM Garage"><span class="cap">Werkstatt</span></div>
-      <div class="ph"><img src="/bm-garage/assets/engine-1.jpg" alt="Motorinstandsetzung Steuerkette"><span class="cap">Mechanik</span></div>
-      <div class="ph"><img src="/bm-garage/assets/engine-2.jpg" alt="Motorinstandsetzung Detail"><span class="cap">Diagnose</span></div>
-      <div class="ph"><img src="/bm-garage/assets/engine-3.jpg" alt="Motorraum Reparatur"><span class="cap">Service</span></div>
-      <div class="ph"><img src="/bm-garage/assets/engine-4.jpg" alt="Fahrzeug in Reparatur"><span class="cap">Reparatur</span></div>
+      <div class="ph big"><img src="/bm-garage/assets/werkstatt-2.jpg" alt="Werkstatthalle BM Garage"></div>
+      <div class="ph"><img src="/bm-garage/assets/engine-1.jpg" alt="Motorinstandsetzung Steuerkette"></div>
+      <div class="ph"><img src="/bm-garage/assets/engine-2.jpg" alt="Motorinstandsetzung Detail"></div>
+      <div class="ph"><img src="/bm-garage/assets/engine-3.jpg" alt="Motorraum Reparatur"></div>
+      <div class="ph"><img src="/bm-garage/assets/engine-4.jpg" alt="Fahrzeug in Reparatur"></div>
     </div>
   </div>
 </section>
