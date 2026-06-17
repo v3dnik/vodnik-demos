@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BM Garage GmbH — Ihre Vertrauenswerkstatt in Oftringen</title>
+<meta name="description" content="BM Garage GmbH Oftringen – Autospritzwerk, Folierung, Karosserie, Service & Diagnose für alle Marken. Ihre Vertrauenswerkstatt im Kanton Aargau.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#0a0a0a;--mut:#6b6b6b;--line:#e2e2e2;--red:#e8231a;--gold:#0a0a0a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.55}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+h1,h2,h3{font-family:'Big Shoulders Display',sans-serif;text-transform:uppercase;letter-spacing:-.01em;line-height:.95}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.tag{font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;color:var(--red)}
+header{border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:50;background:#fff}
+nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo img{height:36px;filter:grayscale(100%);mix-blend-mode:multiply}
+.navlinks{display:flex;gap:34px;align-items:center}
+.navlinks a{font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+.navlinks a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:13px 26px;font-size:.82rem;transition:.2s}
+.btn:hover{background:var(--red)}
+.btn.line{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+.burger{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer}
+
+.hero{padding:0;border-bottom:3px solid var(--ink);display:grid;grid-template-columns:1.3fr 1fr}
+.hero .l{padding:80px 0}
+.hero h1{font-size:clamp(3rem,9vw,6.6rem);font-weight:900}
+.hero h1 .r{color:var(--red)}
+.hero p{font-size:1.1rem;color:var(--mut);max-width:440px;margin-top:20px}
+.cta{display:flex;gap:0;margin-top:32px;flex-wrap:wrap}
+.hero .r{border-left:3px solid var(--ink);position:relative;overflow:hidden}
+.hero .r img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.1)}
+
+.ticker{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:13px 0;font-family:'Big Shoulders Display';font-weight:800;font-size:1.15rem;letter-spacing:.1em;text-transform:uppercase}
+.ticker div{display:inline-block;animation:scroll 26s linear infinite}
+.ticker span{margin:0 22px}.ticker .d{color:var(--red)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+section{padding:70px 0;border-bottom:3px solid var(--ink)}
+.shead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:14px}
+.shead h2{font-size:clamp(2.2rem,5.5vw,3.6rem)}
+.shead p{color:var(--mut);max-width:480px;font-family:'Archivo';text-transform:none;font-weight:400}
+.gtitle{color:var(--red);font-size:clamp(3.4rem,9vw,6.5rem)}
+
+.svc{display:grid;grid-template-columns:repeat(3,1fr)}
+.card{padding:32px;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.card:nth-child(3n){border-right:none}
+.cico{width:34px;height:34px;color:var(--red);margin-bottom:14px}
+.cico svg{width:100%;height:100%}
+.card h3{font-size:1.5rem;margin:0 0 8px;font-weight:800}
+.card p{color:var(--mut);font-size:.92rem;text-transform:none;font-family:'Archivo'}
+
+.feat{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.feat .ph{border-right:3px solid var(--ink);overflow:hidden}
+.feat .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.05);min-height:380px}
+.feat .txt{padding:0 0 0 48px}
+.feat h2{font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:18px}
+.feat p{color:var(--mut);margin-bottom:14px;font-family:'Archivo';text-transform:none;font-weight:400}
+.checks{list-style:none;display:grid;gap:12px;margin-top:8px}
+.checks li{display:flex;gap:12px;align-items:center;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.88rem}
+.checks .c{width:22px;height:22px;background:var(--red);color:#fff;display:grid;place-items:center;font-size:.7rem;flex-shrink:0}
+
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:3px solid var(--ink)}
+.gal .ph{aspect-ratio:1;border-right:3px solid var(--ink)}
+.gal .ph:last-child{border-right:none}
+.gal .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.08)}
+.gal .ph.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+
+.gbadge{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:2px solid var(--ink)}
+.gbadge .gmark{width:22px;height:22px;border-radius:50%;background:var(--ink);display:grid;place-items:center;font-family:'Archivo';font-weight:700;font-size:.8rem;color:#fff;flex-shrink:0}
+.gbadge .score{font-family:'Big Shoulders Display';font-size:1.3rem;font-weight:800}
+.gbadge .stars{color:var(--red);font-size:.85rem;letter-spacing:1px}
+.gbadge .gcount{font-size:.82rem;color:var(--mut);font-family:'Archivo'}
+.revmarq{position:relative;overflow:hidden;margin-top:0;border-top:3px solid var(--ink);padding-top:30px;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.revtrack{display:flex;gap:0;width:max-content;animation:revscroll 48s linear infinite}
+.revmarq:hover .revtrack{animation-play-state:paused}
+@keyframes revscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rcard{width:320px;flex-shrink:0;background:#fff;border:2px solid var(--ink);padding:24px;margin-right:-2px}
+.rcard .stars{color:var(--red);font-size:.95rem;letter-spacing:2px;margin-bottom:12px}
+.rcard p{color:#222;font-size:.92rem;line-height:1.55;min-height:78px;font-family:'Archivo';text-transform:none;font-weight:400}
+.rcard .who{margin-top:14px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:.8rem;color:var(--mut)}
+
+.contact{display:grid;grid-template-columns:1.2fr 1fr;border:3px solid var(--ink)}
+.contact .l{padding:48px;border-right:3px solid var(--ink)}
+.contact .r{padding:48px;background:var(--ink);color:#fff}
+.contact h2{font-size:2.6rem;margin-bottom:18px}
+.crow{display:flex;gap:14px;padding:16px 0;border-bottom:2px solid var(--line)}
+.crow .k{width:38px;height:38px;background:var(--ink);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.crow .k svg{width:18px;height:18px}
+.crow .lab{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-weight:700}
+.crow .val{font-weight:700;font-size:1.05rem}
+.contact .r h3{font-size:2rem;margin-bottom:8px}
+.contact .r p{color:#bbb;margin-bottom:22px;font-family:'Archivo';text-transform:none;font-weight:400}
+.contact .r .btn{width:100%;justify-content:center;margin-bottom:12px;background:#fff;color:var(--ink)}
+.contact .r .btn:hover{background:var(--red);color:#fff}
+.contact .r .btn svg{width:18px;height:18px}
+.mapwrap{margin-top:0;border:3px solid var(--ink);border-top:none;height:380px;position:relative;overflow:hidden}
+.mapwrap iframe{width:100%;height:100%;border:0;filter:grayscale(100%) contrast(1.05)}
+.maplink{position:absolute;bottom:16px;right:16px;z-index:2}
+
+footer{padding:36px 0;color:var(--mut);font-size:.85rem}
+.fgrid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+footer .logo img{height:28px}
+footer .fright{display:flex;gap:18px;align-items:center}
+footer .fright a:hover{color:var(--red)}
+.flegal{display:flex;gap:16px;flex-wrap:wrap}
+
+@media(max-width:900px){.navlinks{display:none}.burger{display:block}
+  .hero{grid-template-columns:1fr}.hero .r{border-left:none;border-top:3px solid var(--ink);min-height:280px}
+  .svc{grid-template-columns:1fr 1fr}.card:nth-child(2n){border-right:none}
+  .feat{grid-template-columns:1fr}.feat .ph{border-right:none;border-bottom:3px solid var(--ink)}.feat .txt{padding:36px 0 0}
+  .gal{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.contact .l{border-right:none;border-bottom:3px solid var(--ink)}
+  .mapwrap{height:300px}}
+@media(max-width:520px){.svc{grid-template-columns:1fr}.card{border-right:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav>
+    <a href="#" class="logo"><img src="/bm-garage2/assets/bm-logo-full.png" alt="BM Garage GmbH Logo"></a>
+    <div class="navlinks">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber">Über uns</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <a href="tel:+41768185232" class="btn">076 818 52 32</a>
+    <button class="burger" onclick="document.querySelector('.navlinks').style.display='flex'">☰</button>
+  </nav></div>
+</header>
+
+<main>
+<section class="hero"><div class="wrap" style="display:grid;grid-template-columns:1.3fr 1fr;padding:0">
+  <div class="l">
+    <span class="tag">Werkstatt — Oftringen, Aargau</span>
+    <h1>PRÄZISION<br>OHNE<br><span class="r">KOMPROMISS.</span></h1>
+    <p>Lackierung, Karosserie und Service für jedes Auto — klar, ehrlich, präzise. Auch Sport- und Oberklassefahrzeuge.</p>
+    <div class="cta"><a href="#kontakt" class="btn">Termin anfragen</a><a href="#leistungen" class="btn line">Leistungen</a></div>
+  </div>
+  <div class="r"><img src="/bm-garage2/assets/audi-lift.jpg" alt="Audi auf der Hebebühne bei BM Garage"></div>
+</div></section>
+
+<div class="ticker"><div>
+  <span>Lackierung</span><span class="d">/</span><span>Folierung</span><span class="d">/</span><span>Karosserie</span><span class="d">/</span><span>Service</span><span class="d">/</span><span>Pneu</span><span class="d">/</span><span>Diagnose</span><span class="d">/</span>
+  <span>Lackierung</span><span class="d">/</span><span>Folierung</span><span class="d">/</span><span>Karosserie</span><span class="d">/</span><span>Service</span><span class="d">/</span><span>Pneu</span><span class="d">/</span><span>Diagnose</span><span class="d">/</span>
+</div></div>
+
+<section id="leistungen">
+  <div class="wrap"><div class="shead"><h2>Leistungen</h2><p>Von der edlen Lackierung bis zur sauberen Mechanik — alles aus einer Hand.</p></div></div>
+  <div class="svc">
+    <div class="card"><span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7V4.5h3V7"/><path d="M6.5 7h7l2.5 2.5V18a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1V7Z"/><path d="M11.5 11h4M11.5 14h5M11.5 17h4"/></svg></span><h3>Lackierung</h3><p>Eigenes Spritzwerk, perfektes Finish.</p></div>
+    <div class="card"><span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4"/><circle cx="7" cy="12" r="1.3" fill="currentColor" stroke="none"/><path d="M11 12h10"/><path d="M17 9v6M21 10v4"/></svg></span><h3>Folierung</h3><p>Individuelle Designs und Akzente.</p></div>
+    <div class="card"><span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 4.5 9A2 2 0 0 1 6.4 7.5h11.2A2 2 0 0 1 19.5 9l1.5 4.5"/><path d="M3 13.5h18V16a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-.8H7V16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2.5Z"/><circle cx="7.5" cy="16.7" r="1.3"/><circle cx="16.5" cy="16.7" r="1.3"/></svg></span><h3>Karosserie</h3><p>Unfallschäden fachgerecht behoben.</p></div>
+    <div class="card"><span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.2a3.8 3.8 0 1 0-5.1 5.1L4.5 16.2l3.3 3.3 4.9-4.9a3.8 3.8 0 0 0 5.1-5.1l-2 2-1.9-1.9 2-2Z"/></svg></span><h3>Service</h3><p>Wartung nach Herstellervorgabe.</p></div>
+    <div class="card"><span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.5 6.5l2 2M15.5 15.5l2 2M6.5 17.5l2-2M15.5 8.5l2-2"/></svg></span><h3>Pneu &amp; Räder</h3><p>Wechsel, Montage, Einlagerung.</p></div>
+    <div class="card" style="border-right:none"><span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 1 1 16 0"/><path d="M12 15l4.2-4.2"/><circle cx="12" cy="15" r="1.1" fill="currentColor" stroke="none"/><path d="M4 15h.01M20 15h.01M12 7h.01"/></svg></span><h3>Diagnose</h3><p>Fehlersuche für alle Marken.</p></div>
+  </div>
+</section>
+
+<section id="ueber">
+  <div class="feat">
+    <div class="ph"><img src="/bm-garage2/assets/werkstatt-1.jpg" alt="Werkstatt von BM Garage GmbH mit Fahrzeugen"></div>
+    <div class="txt wrap" style="padding-right:32px">
+      <span class="tag">Über uns</span>
+      <h2>Klar. Ehrlich.<br>Präzise.</h2>
+      <p>BM Garage GmbH ist Ihre Vertrauenswerkstatt in Oftringen. Wir nehmen uns Zeit, erklären die Optionen und arbeiten präzise — ob Alltagsauto oder Sportwagen.</p>
+      <p>Markenunabhängig: Originalteile oder hochwertige Alternativen — Sie entscheiden.</p>
+      <ul class="checks">
+        <li><span class="c">✓</span> Eigenes Spritzwerk &amp; Folierung</li>
+        <li><span class="c">✓</span> Alle Marken &amp; Sportfahrzeuge</li>
+        <li><span class="c">✓</span> Faire, transparente Preise</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap"><div class="shead"><h2 class="gtitle">Galerie</h2></div></div>
+  <div class="wrap"><div class="gal">
+    <div class="ph big"><img src="/bm-garage2/assets/werkstatt-2.jpg" alt="Werkstatthalle BM Garage"></div>
+    <div class="ph"><img src="/bm-garage2/assets/engine-1.jpg" alt="Motorinstandsetzung Steuerkette"></div>
+    <div class="ph"><img src="/bm-garage2/assets/engine-2.jpg" alt="Motorinstandsetzung Detail"></div>
+    <div class="ph"><img src="/bm-garage2/assets/engine-3.jpg" alt="Motorraum Reparatur"></div>
+    <div class="ph"><img src="/bm-garage2/assets/engine-4.jpg" alt="Fahrzeug in Reparatur"></div>
+  </div></div>
+</section>
+
+<section id="bewertungen" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="shead">
+      <h2>Bewertungen</h2>
+      <a class="gbadge" href="https://www.google.com/maps/search/BM+Garage+GmbH+Oftringen" target="_blank">
+        <span class="gmark">G</span><span class="score">4.7</span><span class="stars">★★★★★</span><span class="gcount">14 Google-Bewertungen</span>
+      </a>
+    </div>
+  </div>
+  <div class="revmarq"><div class="revtrack">
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Super Werkstatt! Dachte erst, wird teuer, aber war nur ne Kleinigkeit. Schnell gefunden, fix repariert. Ehrliche Leute, die einen nicht abzocken. Empfehlenswert!“</p><div class="who">— Witeg</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Sehr kompetente Garage. Hat sehr schnell und mit einem fairen Preis meinen Ferrari gepflegt! Werde sicher weiterempfehlen.“</p><div class="who">— Betim Gashi</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Hatte jahrelang ein Problem mit meinem Audi Q5. AMAG sowie andere Garagen konnten den Fehler nicht finden. Nachdem ich hier war, wurde das Problem schnell gefunden.“</p><div class="who">— Ardit Hoxhaj</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Coole Garage und fair, sehr sympathisch!“</p><div class="who">— Behar Hoxhaj</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Super Mechaniker. Immer wieder gern.“</p><div class="who">— Bari A.</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Top, gerne wieder.“</p><div class="who">— Bekir Aktas</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Super 👍👍“</p><div class="who">— Besart Shala</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Super Werkstatt! Dachte erst, wird teuer, aber war nur ne Kleinigkeit. Schnell gefunden, fix repariert. Ehrliche Leute, die einen nicht abzocken. Empfehlenswert!“</p><div class="who">— Witeg</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Sehr kompetente Garage. Hat sehr schnell und mit einem fairen Preis meinen Ferrari gepflegt! Werde sicher weiterempfehlen.“</p><div class="who">— Betim Gashi</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Hatte jahrelang ein Problem mit meinem Audi Q5. AMAG sowie andere Garagen konnten den Fehler nicht finden. Nachdem ich hier war, wurde das Problem schnell gefunden.“</p><div class="who">— Ardit Hoxhaj</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Coole Garage und fair, sehr sympathisch!“</p><div class="who">— Behar Hoxhaj</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Super Mechaniker. Immer wieder gern.“</p><div class="who">— Bari A.</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Top, gerne wieder.“</p><div class="who">— Bekir Aktas</div></div>
+    <div class="rcard"><div class="stars">★★★★★</div><p>„Super 👍👍“</p><div class="who">— Besart Shala</div></div>
+  </div></div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="contact">
+      <div class="l">
+        <span class="tag">Kontakt</span>
+        <h2>Bereit für<br>den Termin?</h2>
+        <div class="crow"><div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><div class="lab">Adresse</div><div class="val">Äussere Luzernerstrasse 10<br>4665 Oftringen</div></div></div>
+        <div class="crow"><div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></div><div><div class="lab">Telefon</div><div class="val"><a href="tel:+41768185232">076 818 52 32</a> · <a href="tel:+41788453553">078 845 35 53</a></div></div></div>
+        <div class="crow"><div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><div class="lab">E-Mail</div><div class="val"><a href="mailto:bm-garage@hotmail.com">bm-garage@hotmail.com</a></div></div></div>
+        <div class="crow" style="border:none"><div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.7" cy="7.3" r="0.6" fill="currentColor" stroke="none"/></svg></div><div><div class="lab">Instagram</div><div class="val"><a href="https://instagram.com/bmgarageag" target="_blank">@bmgarageag</a></div></div></div>
+      </div>
+      <div class="r">
+        <h3>Jetzt anfragen</h3>
+        <p>Schnell &amp; unkompliziert per Telefon oder E-Mail.</p>
+        <a href="tel:+41768185232" class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg><span>Anrufen</span></a>
+        <a href="mailto:bm-garage@hotmail.com" class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>E-Mail</span></a>
+        <a href="https://maps.google.com/?q=Äussere+Luzernerstrasse+10+4665+Oftringen" target="_blank" class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 4 5v16l5-2 6 2 5-2V3l-5 2-6-2Z"/><path d="M9 3v16M15 5v16"/></svg><span>Route</span></a>
+      </div>
+    </div>
+    <div class="mapwrap">
+      <iframe src="https://www.google.com/maps?q=Äussere+Luzernerstrasse+10,+4665+Oftringen&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="BM Garage GmbH auf Google Maps"></iframe>
+      <a href="https://www.google.com/maps/search/BM+Garage+GmbH+Oftringen" target="_blank" class="btn maplink">In Google Maps öffnen</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap fgrid">
+  <a href="#" class="logo"><img src="/bm-garage2/assets/bm-logo-full.png" alt="BM Garage GmbH"></a>
+  <div>Äussere Luzernerstrasse 10 · 4665 Oftringen · © 2026 · Alle Rechte vorbehalten</div>
+  <div class="fright">
+    <div class="flegal"><a href="/bm-garage2/impressum">Impressum</a><a href="/bm-garage2/datenschutz">Datenschutz</a></div>
+    <a href="https://instagram.com/bmgarageag" target="_blank">Instagram</a>
+  </div>
+</div></footer>
+</body>
+</html>
