@@ -136,10 +136,34 @@ footer .fright{display:flex;gap:18px;align-items:center}
 footer .fright a:hover{color:var(--red)}
 .flegal{display:flex;gap:16px;flex-wrap:wrap}
 
+/* Google reviews */
+.gbadge{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:10px 16px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;transition:.2s}
+.gbadge:hover{border-color:var(--yel)}
+.gbadge .gmark{width:22px;height:22px;border-radius:50%;background:#fff;display:grid;place-items:center;font-family:'Saira';font-weight:700;font-size:.8rem;color:#4285f4;flex-shrink:0}
+.gbadge .score{font-family:'Bebas Neue';font-size:1.3rem;color:var(--ink)}
+.gbadge .stars{color:var(--yel);font-size:.85rem;letter-spacing:1px}
+.gbadge .gcount{font-size:.82rem;color:var(--mut)}
+.revmarq{position:relative;overflow:hidden;margin-top:36px;
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.revtrack{display:flex;gap:16px;width:max-content;animation:revscroll 48s linear infinite}
+.revmarq:hover .revtrack{animation-play-state:paused}
+@keyframes revscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rcard{width:320px;flex-shrink:0;background:var(--bg2);border:1px solid var(--line);border-radius:4px;padding:24px;position:relative}
+.rcard::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--yel)}
+.rcard .stars{color:var(--yel);font-size:.95rem;letter-spacing:2px;margin-bottom:12px}
+.rcard p{color:#d4d4d8;font-size:.92rem;line-height:1.55;min-height:78px}
+.rcard .who{margin-top:14px;font-family:'Saira';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.8rem;color:var(--mut)}
+
+/* Map */
+.mapwrap{margin-top:22px;border:1px solid var(--line);height:380px;position:relative;overflow:hidden}
+.mapwrap iframe{width:100%;height:100%;border:0;filter:invert(92%) hue-rotate(180deg) contrast(85%) brightness(95%) saturate(1.1)}
+.maplink{position:absolute;bottom:16px;right:16px;z-index:2}
+
 @media(max-width:900px){.navlinks{display:none}.burger{display:block}
   .svc{grid-template-columns:1fr 1fr}.feat{grid-template-columns:1fr;gap:34px}
   .gal{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}
-  .hero{min-height:auto;padding:100px 0 70px}}
+  .hero{min-height:auto;padding:100px 0 70px}.mapwrap{height:300px}}
 @media(max-width:520px){.svc{grid-template-columns:1fr}.gal .ph.big{grid-column:span 2}}
 </style>
 </head>
@@ -151,6 +175,7 @@ footer .fright a:hover{color:var(--red)}
       <a href="#leistungen">Leistungen</a>
       <a href="#ueber">Über uns</a>
       <a href="#galerie">Galerie</a>
+      <a href="#bewertungen">Bewertungen</a>
       <a href="#kontakt">Kontakt</a>
       <a href="tel:+41768185232" class="btn"><span>076 818 52 32</span></a>
     </div>
@@ -243,6 +268,40 @@ footer .fright a:hover{color:var(--red)}
   </div>
 </section>
 
+<section id="bewertungen">
+  <div class="wrap">
+    <div class="shead">
+      <span class="tag">Bewertungen</span>
+      <h2>Das sagen unsere Kunden.</h2>
+      <a class="gbadge" href="https://www.google.com/maps/search/BM+Garage+GmbH+Oftringen" target="_blank">
+        <span class="gmark">G</span>
+        <span class="score">4.7</span>
+        <span class="stars">★★★★★</span>
+        <span class="gcount">14 Google-Bewertungen</span>
+      </a>
+    </div>
+  </div>
+  <div class="revmarq">
+    <div class="revtrack">
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Super Werkstatt! Dachte erst, wird teuer, aber war nur ne Kleinigkeit. Schnell gefunden, fix repariert. Ehrliche Leute, die einen nicht abzocken. Empfehlenswert!“</p><div class="who">— Witeg</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Sehr kompetente Garage. Hat sehr schnell und mit einem fairen Preis meinen Ferrari gepflegt! Werde sicher weiterempfehlen.“</p><div class="who">— Betim Gashi</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Hatte jahrelang ein Problem mit meinem Audi Q5. AMAG sowie andere Garagen konnten den Fehler nicht finden. Nachdem ich hier war, wurde das Problem schnell gefunden.“</p><div class="who">— Ardit Hoxhaj</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Coole Garage und fair, sehr sympathisch!“</p><div class="who">— Behar Hoxhaj</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Super Mechaniker. Immer wieder gern.“</p><div class="who">— Bari A.</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Top, gerne wieder.“</p><div class="who">— Bekir Aktas</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Super 👍👍“</p><div class="who">— Besart Shala</div></div>
+
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Super Werkstatt! Dachte erst, wird teuer, aber war nur ne Kleinigkeit. Schnell gefunden, fix repariert. Ehrliche Leute, die einen nicht abzocken. Empfehlenswert!“</p><div class="who">— Witeg</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Sehr kompetente Garage. Hat sehr schnell und mit einem fairen Preis meinen Ferrari gepflegt! Werde sicher weiterempfehlen.“</p><div class="who">— Betim Gashi</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Hatte jahrelang ein Problem mit meinem Audi Q5. AMAG sowie andere Garagen konnten den Fehler nicht finden. Nachdem ich hier war, wurde das Problem schnell gefunden.“</p><div class="who">— Ardit Hoxhaj</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Coole Garage und fair, sehr sympathisch!“</p><div class="who">— Behar Hoxhaj</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Super Mechaniker. Immer wieder gern.“</p><div class="who">— Bari A.</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Top, gerne wieder.“</p><div class="who">— Bekir Aktas</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p>„Super 👍👍“</p><div class="who">— Besart Shala</div></div>
+    </div>
+  </div>
+</section>
+
 <section id="kontakt">
   <div class="wrap">
     <div class="contact">
@@ -262,6 +321,10 @@ footer .fright a:hover{color:var(--red)}
         <a href="mailto:bm-garage@hotmail.com" class="btn yel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>E-Mail</span></a>
         <a href="https://maps.google.com/?q=Äussere+Luzernerstrasse+10+4665+Oftringen" target="_blank" class="btn gh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 4 5v16l5-2 6 2 5-2V3l-5 2-6-2Z"/><path d="M9 3v16M15 5v16"/></svg><span>Route</span></a>
       </div>
+    </div>
+    <div class="mapwrap">
+      <iframe src="https://www.google.com/maps?q=Äussere+Luzernerstrasse+10,+4665+Oftringen&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="BM Garage GmbH auf Google Maps"></iframe>
+      <a href="https://www.google.com/maps/search/BM+Garage+GmbH+Oftringen" target="_blank" class="btn yel maplink"><span>In Google Maps öffnen</span></a>
     </div>
   </div>
 </section>
