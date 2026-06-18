@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!-- Primary SEO -->
+<script>
+  /* Asset-Pfad-Fix: stellt relative Pfade (images/, impressum.html) korrekt zu,
+     auch wenn die Seite in einem Unterordner ohne abschliessenden Slash liegt
+     (z. B. /nikis-transport auf Vercel). Auf der echten Root-Domain ohne Wirkung. */
+  (function () {
+    var p = location.pathname;
+    if (!p.endsWith('/') && p.substring(p.lastIndexOf('/') + 1).indexOf('.') === -1) {
+      document.write('<base href="' + p + '/">');
+    }
+  })();
+</script>
 <title>Nikis Transport Oftringen | Fahrzeugtransport, Umzug & Möbellift 24/7</title>
 <meta name="description" content="Nikis Transport in Oftringen (AG): Fahrzeugtransporte, Umzüge, Möbellift-Vermietung und Entsorgung — schweizweit und 24/7 erreichbar. Jetzt unverbindliche Offerte unter 076 518 49 80." />
 <meta name="keywords" content="Transport Oftringen, Umzug Oftringen, Fahrzeugtransport Schweiz, Autotransport Aargau, Möbellift mieten, Umzugsfirma Zofingen, Entsorgung Räumung, Transportfirma Aargau, Umzug Schweiz 24/7" />
