@@ -128,6 +128,11 @@ section{position:relative}
 .compare .lbl-n{right:14px;color:var(--teal)}
 .vn-hint{text-align:center;font-size:12.5px;color:var(--muted2);margin-top:14px;display:flex;align-items:center;justify-content:center;gap:7px}
 
+/* AHK SLIDER GRID */
+.ahk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:980px){.ahk-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.ahk-grid{grid-template-columns:1fr}}
+
 /* GALLERY */
 .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
 .gal a{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
@@ -358,20 +363,48 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- AHK VORHER/NACHHER -->
 <section class="sec" id="galerie" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Referenzen</span>
-      <h2>Ausgewählte Arbeiten.</h2>
-      <p>Ein Einblick in montierte Anhängerkupplungen und Werkstattarbeiten.</p>
+      <span class="eyebrow">Anhängerkupplungen</span>
+      <h2>Ohne. Mit.<br>Fertig.</h2>
+      <p>Unsere Spezialität in der Praxis: Ziehen Sie den Regler und sehen Sie, wie aus jedem Fahrzeug ein Zugfahrzeug wird.</p>
     </div>
-    <div class="gal reveal">
-      <a class="big"><img src="assets/ahk-mercedes-1.jpg" alt="Mercedes mit Anhängerkupplung"><span class="tag">AHK · Mercedes</span></a>
-      <a><img src="assets/ahk-kia-ev6-1.jpg" alt="Kia EV6 mit Anhängerkupplung"><span class="tag">AHK · Kia EV6</span></a>
-      <a><img src="assets/ahk-kia-sportage.jpg" alt="Kia Sportage mit Anhängerkupplung"><span class="tag">AHK · Kia</span></a>
-      <a><img src="assets/engine-1.jpg" alt="Motorarbeiten"><span class="tag">Motor</span></a>
-      <a><img src="assets/ahk-mercedes-2.jpg" alt="Mercedes E-Klasse mit Anhängerkupplung"><span class="tag">AHK · Mercedes</span></a>
+    <div class="ahk-grid">
+      <div class="vn reveal">
+        <h3>Kia EV6</h3>
+        <p class="vn-sub">Abnehmbare Anhängerkupplung.</p>
+        <div class="compare" data-compare>
+          <img class="before-img" src="assets/ahk-kia-ev6-1.jpg" alt="Kia EV6 ohne Anhängerkupplung">
+          <img class="after-img" src="assets/ahk-kia-ev6-2.jpg" alt="Kia EV6 mit Anhängerkupplung">
+          <div class="divider"></div><div class="handle">⇄</div>
+          <span class="lbl lbl-v">Ohne</span><span class="lbl lbl-n">Mit AHK</span>
+        </div>
+        <div class="vn-hint">⇄ Regler ziehen</div>
+      </div>
+      <div class="vn reveal">
+        <h3>Kia Sportage</h3>
+        <p class="vn-sub">Anhängerkupplung montiert.</p>
+        <div class="compare" data-compare>
+          <img class="before-img" src="assets/ahk-kia-sportage.jpg" alt="Kia Sportage ohne Anhängerkupplung">
+          <img class="after-img" src="assets/ahk-kia-sportage-2.jpg" alt="Kia Sportage mit Anhängerkupplung">
+          <div class="divider"></div><div class="handle">⇄</div>
+          <span class="lbl lbl-v">Ohne</span><span class="lbl lbl-n">Mit AHK</span>
+        </div>
+        <div class="vn-hint">⇄ Regler ziehen</div>
+      </div>
+      <div class="vn reveal">
+        <h3>Mercedes E-Klasse</h3>
+        <p class="vn-sub">Anhängerkupplung mit Abnahme.</p>
+        <div class="compare" data-compare>
+          <img class="before-img" src="assets/ahk-mercedes-1.jpg" alt="Mercedes ohne Anhängerkupplung">
+          <img class="after-img" src="assets/ahk-mercedes-2.jpg" alt="Mercedes mit Anhängerkupplung">
+          <div class="divider"></div><div class="handle">⇄</div>
+          <span class="lbl lbl-v">Ohne</span><span class="lbl lbl-n">Mit AHK</span>
+        </div>
+        <div class="vn-hint">⇄ Regler ziehen</div>
+      </div>
     </div>
   </div>
 </section>
