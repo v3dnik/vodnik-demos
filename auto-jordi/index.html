@@ -46,7 +46,9 @@ img{max-width:100%;display:block}
 header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
 header.scrolled{background:rgba(14,20,23,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
-.nav .logo img{height:38px;width:auto}
+.nav .logo{display:inline-flex;align-items:center;background:#fff;padding:9px 15px;border-radius:11px;line-height:0;transition:transform .2s}
+.nav .logo:hover{transform:translateY(-1px)}
+.nav .logo img{height:28px;width:auto}
 .nav-links{display:flex;align-items:center;gap:34px}
 .nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
@@ -186,7 +188,8 @@ section{position:relative}
 /* FOOTER */
 footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px}
-.foot-brand img{height:40px;margin-bottom:18px}
+.foot-brand .logo-plate{display:inline-flex;background:#fff;padding:11px 17px;border-radius:12px;margin-bottom:18px}
+.foot-brand .logo-plate img{height:34px;display:block}
 .foot-brand p{color:var(--muted);font-size:14.5px;max-width:300px}
 .foot-col h4{font-family:var(--font-d);font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted2);margin-bottom:18px}
 .foot-col a,.foot-col p{display:block;color:var(--muted);font-size:14.5px;margin-bottom:11px;transition:color .2s}
@@ -482,7 +485,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/logo.png" alt="Auto Jordi">
+        <span class="logo-plate"><img src="assets/logo.png" alt="Auto Jordi"></span>
         <p>Ihre persönliche Autogarage in Aarburg. Service, Reparatur und Anhängerkupplungen für die ganze Region.</p>
       </div>
       <div class="foot-col">
