@@ -286,7 +286,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
       <p class="lead">Service, Reparatur und Diagnose für jede Marke. Spezialisiert auf <strong>Anhängerkupplungen</strong>, Walnussstrahlen und Nachrüstungen – mit Hol- &amp; Bringservice in der ganzen Region.</p>
       <div class="hero-cta">
         <a href="#kontakt" class="btn btn-primary">Kostenlose Offerte anfragen →</a>
-        <a href="tel:0774988584" class="btn btn-ghost">077 498 85 84</a>
+        <a href="tel:+41774988584" class="btn btn-ghost">+41 77 498 85 84</a>
       </div>
       <div class="hero-stats">
         <div class="s"><b><span class="cnt" data-to="5" data-dec="1">0.0</span>★</b><span>Google-Bewertung</span></div>
@@ -496,7 +496,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
       <p>Schreiben Sie uns Ihr Anliegen – wir melden uns mit einer unverbindlichen Einschätzung. Schnell, persönlich und ehrlich.</p>
       <div class="info-list">
         <div class="info-row"><div class="ic">📍</div><div class="t"><small>Werkstatt</small><b>Wallgrabenweg 11, 4663 Aarburg</b></div></div>
-        <div class="info-row"><div class="ic">📞</div><div class="t"><small>Telefon</small><b><a href="tel:0774988584">077 498 85 84</a></b></div></div>
+        <div class="info-row"><div class="ic">📞</div><div class="t"><small>Telefon</small><b><a href="tel:+41774988584">+41 77 498 85 84</a></b></div></div>
         <div class="info-row"><div class="ic">✉️</div><div class="t"><small>E-Mail</small><b><a href="mailto:autojordi@mail.ch">autojordi@mail.ch</a></b></div></div>
         <div class="info-row"><div class="ic">🕐</div><div class="t"><small>Öffnungszeiten</small><b>Mo–Fr 9:00–14:00 · Termine nach Vereinbarung</b></div></div>
       </div>
@@ -559,7 +559,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
       <div class="foot-col">
         <h4>Kontakt</h4>
         <p>Wallgrabenweg 11<br>4663 Aarburg</p>
-        <a href="tel:0774988584">077 498 85 84</a>
+        <a href="tel:+41774988584">+41 77 498 85 84</a>
         <a href="mailto:autojordi@mail.ch">autojordi@mail.ch</a>
       </div>
     </div>
@@ -633,10 +633,10 @@ form.addEventListener('submit',async(e)=>{
     const j=await res.json();
     status.style.display='block';
     if(j.success){status.style.color='#16B0A6';status.textContent='✓ Vielen Dank! Wir melden uns in Kürze.';form.reset()}
-    else{status.style.color='#F0997B';status.textContent='Es gab ein Problem. Bitte rufen Sie uns an: 077 498 85 84'}
+    else{status.style.color='#F0997B';status.textContent='Es gab ein Problem. Bitte rufen Sie uns an: +41 77 498 85 84'}
   }catch(err){
     status.style.display='block';status.style.color='#F0997B';
-    status.textContent='Es gab ein Problem. Bitte rufen Sie uns an: 077 498 85 84';
+    status.textContent='Es gab ein Problem. Bitte rufen Sie uns an: +41 77 498 85 84';
   }
   btn.textContent=orig;btn.disabled=false;
 });
