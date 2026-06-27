@@ -78,8 +78,23 @@ header.scrolled{background:rgba(14,20,23,.85);backdrop-filter:blur(14px);border-
 .hero-visual{position:relative}
 .hero-graphic{position:relative;border-radius:18px;border:1px solid var(--line2);background:linear-gradient(160deg,#14202550,#10181C);overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;box-shadow:0 30px 70px rgba(0,0,0,.45)}
 .hero-graphic::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,var(--teal) 0 1px,transparent 1px 26px);opacity:.06;pointer-events:none}
-.hero-graphic::after{content:"";position:absolute;width:380px;height:380px;background:radial-gradient(circle,rgba(22,176,166,.16),transparent 70%);top:-12%;right:-12%;pointer-events:none}
+.hero-graphic::after{content:"";position:absolute;width:380px;height:380px;background:radial-gradient(circle,rgba(22,176,166,.16),transparent 70%);top:-12%;right:-12%;pointer-events:none;animation:glowpulse 5s ease-in-out infinite}
+@keyframes glowpulse{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
 .hero-graphic svg{width:86%;height:auto;position:relative;z-index:2}
+/* draw-on animation */
+.car-svg path,.car-svg circle{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.1s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.car-svg .c-body path{animation-delay:.15s}
+.car-svg .c-cabin path{animation-delay:.75s}
+.car-svg .c-door path{animation-delay:.95s}
+.car-svg .c-wheel circle{animation-delay:1.05s}
+.car-svg .c-wheelin circle{animation-delay:1.25s}
+.car-svg .c-spokes path{animation-delay:1.4s}
+.car-svg .c-light path{animation-delay:1.55s}
+.car-svg .c-speed path{animation-delay:1.6s}
+/* ambient: motion lines drift after draw */
+.car-svg .c-speed{animation:drift 3.2s ease-in-out 2.4s infinite}
+@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(-9px)}}
 .hero-graphic-cap{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-family:var(--font-d);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);z-index:2}
 .hero-visual .ph{border-radius:18px;overflow:hidden;border:1px solid var(--line2);box-shadow:0 30px 70px rgba(0,0,0,.5)}
 .hero-visual .ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
@@ -241,6 +256,7 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
+  .car-svg path,.car-svg circle{stroke-dasharray:none!important;stroke-dashoffset:0!important}
 }
 </style>
 </head>
@@ -274,23 +290,23 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
         <a href="tel:0774988584" class="btn btn-ghost">077 498 85 84</a>
       </div>
       <div class="hero-stats">
-        <div class="s"><b>5.0★</b><span>Google-Bewertung</span></div>
-        <div class="s"><b>16</b><span>Bewertungen</span></div>
-        <div class="s"><b>5</b><span>Kantone mobil</span></div>
+        <div class="s"><b><span class="cnt" data-to="5" data-dec="1">0.0</span>★</b><span>Google-Bewertung</span></div>
+        <div class="s"><b><span class="cnt" data-to="16">0</span></b><span>Bewertungen</span></div>
+        <div class="s"><b><span class="cnt" data-to="5">0</span></b><span>Kantone mobil</span></div>
       </div>
     </div>
     <div class="hero-visual reveal">
       <div class="hero-graphic">
-        <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Auto Jordi – Fahrzeug-Silhouette">
+        <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Auto Jordi – Fahrzeug-Silhouette" class="car-svg">
         <g fill="none" stroke="#16B0A6" stroke-linecap="round" stroke-linejoin="round">
-        <g stroke-width="3" opacity="0.32"><path d="M30 130 H150"/><path d="M10 160 H120"/><path d="M40 195 H160"/></g>
-        <g stroke-width="4"><path d="M95 235 Q88 200 92 180 Q98 150 140 145 L210 138 Q250 110 300 108 Q350 108 372 140 L430 150 Q520 158 558 198 Q566 208 560 222"/><path d="M120 238 H150"/><path d="M205 238 H430"/><path d="M508 238 H548"/></g>
-        <g stroke-width="3" opacity="0.85"><path d="M205 140 Q245 116 296 115 Q342 116 360 142 Z"/><path d="M300 115 V142"/></g>
-        <g stroke-width="2.5" opacity="0.55"><path d="M300 145 V205"/></g>
-        <g stroke-width="4"><circle cx="178" cy="238" r="40"/><circle cx="478" cy="238" r="40"/></g>
-        <g stroke-width="2.5" opacity="0.7"><circle cx="178" cy="238" r="20"/><circle cx="478" cy="238" r="20"/></g>
-        <g stroke-width="2" opacity="0.4"><path d="M178 218 V198"/><path d="M178 258 V278"/><path d="M158 238 H138"/><path d="M198 238 H218"/><path d="M478 218 V198"/><path d="M478 258 V278"/><path d="M458 238 H438"/><path d="M498 238 H518"/></g>
-        <g stroke-width="3" opacity="0.9"><path d="M548 205 Q560 208 558 218"/></g>
+        <g class="c-speed" stroke-width="3" opacity="0.32"><path pathLength="1" d="M30 130 H150"/><path pathLength="1" d="M10 160 H120"/><path pathLength="1" d="M40 195 H160"/></g>
+        <g class="c-body" stroke-width="4"><path pathLength="1" d="M95 235 Q88 200 92 180 Q98 150 140 145 L210 138 Q250 110 300 108 Q350 108 372 140 L430 150 Q520 158 558 198 Q566 208 560 222"/><path pathLength="1" d="M120 238 H150"/><path pathLength="1" d="M205 238 H430"/><path pathLength="1" d="M508 238 H548"/></g>
+        <g class="c-cabin" stroke-width="3" opacity="0.85"><path pathLength="1" d="M205 140 Q245 116 296 115 Q342 116 360 142 Z"/><path pathLength="1" d="M300 115 V142"/></g>
+        <g class="c-door" stroke-width="2.5" opacity="0.55"><path pathLength="1" d="M300 145 V205"/></g>
+        <g class="c-wheel" stroke-width="4"><circle pathLength="1" cx="178" cy="238" r="40"/><circle pathLength="1" cx="478" cy="238" r="40"/></g>
+        <g class="c-wheelin" stroke-width="2.5" opacity="0.7"><circle pathLength="1" cx="178" cy="238" r="20"/><circle pathLength="1" cx="478" cy="238" r="20"/></g>
+        <g class="c-spokes" stroke-width="2" opacity="0.4"><path pathLength="1" d="M178 218 V198"/><path pathLength="1" d="M178 258 V278"/><path pathLength="1" d="M158 238 H138"/><path pathLength="1" d="M198 238 H218"/><path pathLength="1" d="M478 218 V198"/><path pathLength="1" d="M478 258 V278"/><path pathLength="1" d="M458 238 H438"/><path pathLength="1" d="M498 238 H518"/></g>
+        <g class="c-light" stroke-width="3" opacity="0.9"><path pathLength="1" d="M548 205 Q560 208 558 218"/></g>
         </g>
         </svg>
       </div>
@@ -566,6 +582,15 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
 </footer>
 
 <script>
+// Count-up hero stats
+const prefersReduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
+document.querySelectorAll('.cnt').forEach(el=>{
+  const to=parseFloat(el.dataset.to),dec=parseInt(el.dataset.dec||'0');
+  if(prefersReduced){el.textContent=to.toFixed(dec);return;}
+  const dur=1300;let start=null;
+  function step(t){if(!start)start=t;const p=Math.min((t-start)/dur,1);const eased=1-Math.pow(1-p,3);el.textContent=(to*eased).toFixed(dec);if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+});
 // Smooth anchor scroll (robust to <base>)
 document.querySelectorAll('a[href*="#"]').forEach(a=>{
   const href=a.getAttribute('href');
