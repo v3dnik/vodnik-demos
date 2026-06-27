@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
+<script>
+(function(){var p=location.pathname;if(p!=='/'&&!p.endsWith('/')&&p.split('/').pop().indexOf('.')===-1)p+='/';var b=p.replace(/[^/]*$/,'');if(b&&b!=='/')document.write('<base href="'+b+'">');})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
@@ -509,6 +512,14 @@ footer{background:var(--bg2);border-top:1px solid var(--line);padding:64px 0 30p
 </footer>
 
 <script>
+// Smooth anchor scroll (robust to <base>)
+document.querySelectorAll('a[href*="#"]').forEach(a=>{
+  const href=a.getAttribute('href');
+  const hash=href.includes('#')?'#'+href.split('#')[1]:'';
+  if(hash&&hash.length>1&&document.querySelector(hash)){
+    a.addEventListener('click',e=>{e.preventDefault();document.querySelector(hash).scrollIntoView({behavior:'smooth'});history.replaceState(null,'',hash)});
+  }
+});
 // Header scroll
 const header=document.getElementById('header');
 addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>20));
