@@ -81,6 +81,39 @@ section{padding:clamp(64px,9vw,110px) 0}
 .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.5;z-index:-1}
 .blob.b1{width:340px;height:340px;background:radial-gradient(circle at 30% 30%,#7fd1e6,#33bdb6);top:-120px;right:-80px}
 .blob.b2{width:260px;height:260px;background:radial-gradient(circle at 30% 30%,#9fe0a8,#5fc59b);bottom:-120px;left:-60px;opacity:.4}
+
+/* rising soap bubbles */
+.bubbles{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bubble{position:absolute;bottom:-80px;left:var(--x);width:var(--s);height:var(--s);border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.98) 0,rgba(255,255,255,.35) 20%,rgba(120,205,215,.30) 52%,rgba(95,185,205,.18) 100%);
+  border:1.5px solid rgba(255,255,255,.8);
+  box-shadow:inset -4px -5px 10px rgba(70,160,180,.25), 0 6px 18px rgba(60,160,180,.16);
+  opacity:0;animation:bubbleRise var(--d) linear var(--delay) infinite}
+.bubble::after{content:"";position:absolute;top:15%;left:20%;width:28%;height:22%;border-radius:50%;
+  background:rgba(255,255,255,.95);filter:blur(.5px)}
+@keyframes bubbleRise{
+  0%{transform:translateY(0) translateX(0) scale(.6);opacity:0}
+  12%{opacity:.95}
+  50%{transform:translateY(-46vh) translateX(14px) scale(1)}
+  82%{opacity:.8}
+  100%{transform:translateY(-92vh) translateX(-10px) scale(1.05);opacity:0}
+}
+/* twinkling sparkles (echo the logo stars) */
+.sparkle{position:absolute;z-index:-1;width:18px;height:18px;opacity:.0;pointer-events:none;
+  background:conic-gradient(from 0deg,transparent 0,rgba(123,209,122,.0) 0);
+  animation:twinkle 4.5s ease-in-out infinite}
+.sparkle::before,.sparkle::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(currentColor,currentColor) center/2px 100% no-repeat,
+             linear-gradient(currentColor,currentColor) center/100% 2px no-repeat}
+.sparkle::after{transform:rotate(45deg);opacity:.6}
+.sparkle.sp1{top:22%;left:42%;color:#48c0c6;animation-delay:.4s}
+.sparkle.sp2{top:38%;left:8%;color:#7fd17a;width:14px;height:14px;animation-delay:2s}
+.sparkle.sp3{top:14%;left:62%;color:#3a9fd6;width:12px;height:12px;animation-delay:3.2s}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.6) rotate(0)}50%{opacity:.85;transform:scale(1) rotate(20deg)}}
+@media (prefers-reduced-motion:reduce){
+  .bubble,.sparkle{animation:none}
+  .bubbles{display:none}
+}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 .hero-copy h1{font-size:clamp(2.2rem,5.4vw,3.7rem);font-weight:800}
 .hero-copy h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
