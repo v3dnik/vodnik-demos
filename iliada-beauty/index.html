@@ -135,13 +135,30 @@
   @media(max-width:760px){.foot-bot{flex-direction:column}}
   .btn-gold{border-color:var(--gold);color:var(--gold)}
   .btn-gold:hover{background:var(--gold);color:var(--wood)}
+
+  /* brand lockups (lotus mark + type) */
+  .lock{display:flex;flex-direction:column;align-items:center}
+  .hero .lock .lotus{height:78px;margin-bottom:14px;filter:brightness(0) invert(1) drop-shadow(0 3px 16px rgba(0,0,0,.4))}
+  .hero .lock .nm{font-family:'Bodoni Moda',serif;font-weight:500;letter-spacing:.2em;line-height:1;font-size:clamp(2.8rem,7.5vw,4.8rem);color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.4);padding-left:.2em}
+  .hero .lock .cos{letter-spacing:.5em;font-size:.62rem;margin-top:14px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.45);padding-left:.5em}
+  @media(max-width:600px){.hero .lock .lotus{height:60px}}
+  .nav-lock{display:flex;align-items:center;gap:13px}
+  .nav-lock .lotus{height:38px}
+  .nav-lock .nm{font-family:'Bodoni Moda',serif;font-weight:500;letter-spacing:.28em;font-size:1.12rem;padding-left:.28em}
+  header:not(.scrolled) .nav-lock .lotus{filter:brightness(0) invert(1) drop-shadow(0 1px 6px rgba(0,0,0,.4))}
+  header:not(.scrolled) .nav-lock .nm{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+  header.scrolled .nav-lock .nm{color:var(--ink)}
+  .foot-lock{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+  .foot-lock .lotus{height:50px;filter:brightness(0) invert(1);opacity:.9}
+  .foot-lock .nm{font-family:'Bodoni Moda',serif;letter-spacing:.26em;font-size:1.3rem;padding-left:.26em}
+  .foot-lock .cos{letter-spacing:.44em;font-size:.55rem;opacity:.7}
 </style>
 </head>
 <body>
 
 <header id="hdr">
   <nav>
-    <a href="#top"><img class="nav-logo" src="/iliada-beauty/logo.png" alt="Iliada Beauty" /></a>
+    <a href="#top"><span class="nav-lock"><img class="lotus" src="/iliada-beauty/lotus.png" alt="Iliada Beauty" /><span class="nm">ILIADA</span></span></a>
     <div class="links">
       <a href="#leistungen">Leistungen</a>
       <a href="#ueber-uns">Salon</a>
@@ -160,7 +177,7 @@
   </div>
   <span class="vidtag">Salon-Film</span>
   <div class="hero-inner">
-    <img class="hero-logo fu d1" src="/iliada-beauty/logo.png" alt="Iliada Beauty" />
+    <div class="lock fu d1"><img class="lotus" src="/iliada-beauty/lotus.png" alt="Iliada Beauty" /><div class="nm">ILIADA</div><div class="cos">BEAUTY · COSMETIC</div></div>
     <p class="fu d3 sub">Ihr Premium Beauty Salon in Strengelbach.</p>
     <a href="#kontakt" class="fu d4 btn">Termin buchen <span class="arr">&rarr;</span></a>
   </div>
@@ -170,7 +187,7 @@
 <!-- INTRO -->
 <section class="intro">
   <div class="wrap">
-    <img class="mark rev" src="/iliada-beauty/logo.png" alt="" />
+    <img class="mark rev" src="/iliada-beauty/lotus.png" alt="" />
     <p class="rev">Wahre Schönheit braucht keine Lautstärke — nur <span>Sorgfalt</span>, Zeit und ein feines Gespür für das Detail.</p>
   </div>
 </section>
@@ -292,7 +309,7 @@
     </div>
     <div class="foot-mid">
       <div class="lead">
-        <img class="foot-logo" src="/iliada-beauty/logo.png" alt="Iliada Beauty" />
+        <div class="foot-lock"><img class="lotus" src="/iliada-beauty/lotus.png" alt="Iliada Beauty" /><span class="nm">ILIADA</span><span class="cos">BEAUTY · COSMETIC</span></div>
         <p>Premium Beauty Salon — Nägel, Wimpern &amp; Brauen, Permanent Make-up, Aqua Peeling und Laser.</p>
       </div>
       <div><h3>Kontakt</h3><address class="mt">Musterstrasse 1<br>4802 Strengelbach<br><br>+41 00 000 00 00<br>hallo@iliada-beauty.ch</address></div>
