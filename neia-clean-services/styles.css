@@ -246,7 +246,8 @@ section{padding:clamp(64px,9vw,110px) 0}
 .footer-bottom .legal a{color:#bcd4d8;margin-left:16px}
 .footer-bottom .legal a:hover{color:#fff}
 .site-credit{font-size:.84rem;color:#90b0b4}
-.site-credit a{color:#bcd4d8}
+.site-credit a{color:#bcd4d8;text-decoration:underline;text-underline-offset:2px}
+.legal .site-credit a{color:var(--accent)}
 .site-credit a:hover{color:#fff}
 
 /* ---------- Legal pages ---------- */
