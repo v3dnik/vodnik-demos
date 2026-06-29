@@ -29,7 +29,7 @@
   header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .5s,box-shadow .5s}
   header.scrolled{background:rgba(251,249,246,.86);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(184,151,94,.18)}
   nav{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:0 auto;padding:16px 32px}
-  .nav-logo{height:50px;width:auto;display:block;transition:filter .5s}
+  .nav-logo{height:56px;width:auto;display:block;transition:filter .5s}
   .links{display:flex;align-items:center;gap:40px}
   .links a{font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--ink);transition:color .4s}
   header:not(.scrolled) .links a{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
@@ -46,9 +46,9 @@
   .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,37,33,.34) 0%,rgba(43,37,33,.12) 38%,rgba(43,37,33,.5) 100%)}
   .vidtag{position:absolute;right:22px;bottom:20px;z-index:3;font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.4);padding:6px 11px}
   .hero-inner{position:relative;z-index:4;color:#fff;padding:0 24px;max-width:880px}
-  .hero-logo{height:160px;width:auto;margin:0 auto 6px;display:block;filter:brightness(0) invert(1) drop-shadow(0 4px 24px rgba(0,0,0,.4))}
+  .hero-logo{height:150px;width:auto;margin:0 auto 6px;display:block;filter:brightness(0) invert(1) drop-shadow(0 4px 24px rgba(0,0,0,.4))}
   @media(max-width:600px){.hero-logo{height:112px}}
-  .hero .sub{margin:18px auto 0;max-width:30rem;color:rgba(255,255,255,.92);font-weight:300;font-size:1.05rem;line-height:1.7;text-shadow:0 1px 10px rgba(0,0,0,.4)}
+  _OLDSUB_{margin:18px auto 0;max-width:30rem;color:rgba(255,255,255,.92);font-weight:300;font-size:1.05rem;line-height:1.7;text-shadow:0 1px 10px rgba(0,0,0,.4)}
   .btn{display:inline-flex;align-items:center;gap:13px;border:1px solid #fff;color:#fff;padding:16px 38px;font-size:.72rem;text-transform:uppercase;letter-spacing:.22em;transition:all .5s;margin-top:38px;background:transparent}
   .btn:hover{background:#fff;color:var(--ink)}
   .btn .arr{transition:transform .5s}.btn:hover .arr{transform:translateX(5px)}
@@ -62,7 +62,7 @@
 
   /* intro */
   .intro{text-align:center;padding:104px 0 20px}
-  .intro .mark{height:74px;width:auto;margin:0 auto 26px;display:block;opacity:.92}
+  .intro .mark{height:96px;width:auto;margin:0 auto 26px;display:block;opacity:.92}
   .intro p{font-family:'Bodoni Moda',serif;font-style:italic;font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.42;max-width:46rem;margin:0 auto;color:var(--ink)}
   .intro p span{color:var(--goldDeep)}
 
@@ -158,7 +158,7 @@
 
 <header id="hdr">
   <nav>
-    <a href="#top"><span class="nav-lock"><img class="lotus" src="/iliada-beauty/lotus.png" alt="Iliada Beauty" /><span class="nm">ILIADA</span></span></a>
+    <a href="#top"><img class="nav-logo" src="/iliada-beauty/logo.png" alt="Iliada Beauty" /></a>
     <div class="links">
       <a href="#leistungen">Leistungen</a>
       <a href="#ueber-uns">Salon</a>
@@ -177,7 +177,7 @@
   </div>
   <span class="vidtag">Salon-Film</span>
   <div class="hero-inner">
-    <div class="lock fu d1"><img class="lotus" src="/iliada-beauty/lotus.png" alt="Iliada Beauty" /><div class="nm">ILIADA</div><div class="cos">BEAUTY · COSMETIC</div></div>
+    <img class="hero-logo fu d1" src="/iliada-beauty/logo.png" alt="Iliada Beauty" />
     <p class="fu d3 sub">Ihr Premium Beauty Salon in Strengelbach.</p>
     <a href="#kontakt" class="fu d4 btn">Termin buchen <span class="arr">&rarr;</span></a>
   </div>
@@ -187,7 +187,7 @@
 <!-- INTRO -->
 <section class="intro">
   <div class="wrap">
-    <img class="mark rev" src="/iliada-beauty/lotus.png" alt="" />
+    <img class="mark rev" src="/iliada-beauty/logo.png" alt="" />
     <p class="rev">Wahre Schönheit braucht keine Lautstärke — nur <span>Sorgfalt</span>, Zeit und ein feines Gespür für das Detail.</p>
   </div>
 </section>
@@ -309,7 +309,7 @@
     </div>
     <div class="foot-mid">
       <div class="lead">
-        <div class="foot-lock"><img class="lotus" src="/iliada-beauty/lotus.png" alt="Iliada Beauty" /><span class="nm">ILIADA</span><span class="cos">BEAUTY · COSMETIC</span></div>
+        <img class="foot-logo" src="/iliada-beauty/logo.png" alt="Iliada Beauty" />
         <p>Premium Beauty Salon — Nägel, Wimpern &amp; Brauen, Permanent Make-up, Aqua Peeling und Laser.</p>
       </div>
       <div><h3>Kontakt</h3><address class="mt">Musterstrasse 1<br>4802 Strengelbach<br><br>+41 00 000 00 00<br>hallo@iliada-beauty.ch</address></div>
