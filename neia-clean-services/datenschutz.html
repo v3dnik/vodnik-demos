@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<script>
+  (function () {
+    var path = window.location.pathname;
+    if (/\.[a-zA-Z0-9]+$/.test(path)) { path = path.substring(0, path.lastIndexOf('/') + 1); }
+    else if (!path.endsWith('/')) { path = path + '/'; }
+    var base = document.createElement('base'); base.href = path; document.head.appendChild(base);
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Datenschutzerklärung — Neia Clean Services</title>
+<meta name="theme-color" content="#2bb3bb">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Startseite"><img src="assets/logo.webp" alt="Neia Clean Services" width="120" height="64"></a>
+    <a class="btn btn-primary" href="index.html#kontakt">Offerte anfragen</a>
+  </div>
+</header>
+
+<main class="legal">
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg> Zurück zur Startseite</a>
+  <h1>Datenschutzerklärung</h1>
+
+  <p>
+    Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir bearbeiten Ihre Daten im Einklang
+    mit dem revidierten Schweizer Datenschutzgesetz (nDSG). Nachfolgend informieren wir Sie über
+    Art, Umfang und Zweck der Bearbeitung personenbezogener Daten auf dieser Website.
+  </p>
+
+  <h2>Verantwortliche Stelle</h2>
+  <p>
+    Neia Clean Services, Hubelweg 6, 4802 Strengelbach, Schweiz<br>
+    E-Mail: <a href="mailto:neiacleanservices@hotmail.com">neiacleanservices@hotmail.com</a>
+  </p>
+
+  <h2>Kontaktformular</h2>
+  <p>
+    Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem
+    Formular (Name, E-Mail-Adresse, Telefonnummer und Nachricht) zwecks Bearbeitung der Anfrage
+    bei uns gespeichert. Für die Übermittlung des Formulars setzen wir den Dienst Web3Forms ein.
+    Die eingegebenen Daten werden zur Zustellung Ihrer Nachricht verarbeitet. Wir geben diese Daten
+    nicht ohne Ihre Einwilligung weiter.
+  </p>
+
+  <h2>Hosting</h2>
+  <p>
+    Diese Website wird bei Vercel gehostet. Beim Aufrufen der Website werden technisch notwendige
+    Server-Logdaten (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, abgerufene Seite,
+    Browsertyp) verarbeitet, um den sicheren und stabilen Betrieb zu gewährleisten.
+  </p>
+
+  <h2>Cookies</h2>
+  <p>
+    Diese Website verwendet keine Tracking- oder Marketing-Cookies. Es werden lediglich technisch
+    notwendige Funktionen genutzt.
+  </p>
+
+  <h2>Ihre Rechte</h2>
+  <p>
+    Sie haben das Recht auf Auskunft, Berichtigung, Löschung sowie Einschränkung der Bearbeitung
+    Ihrer personenbezogenen Daten. Wenden Sie sich dazu an die oben genannte Kontaktadresse.
+  </p>
+
+  <p class="site-credit" style="margin-top:34px;color:var(--muted)">Website by
+    <a href="https://www.vodnik.ch" target="_blank" rel="noopener">www.vodnik.ch</a>
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:0;padding-top:0">
+      <p class="site-credit">© <span id="year"></span> Neia Clean Services · Website by
+        <a href="https://www.vodnik.ch" target="_blank" rel="noopener">www.vodnik.ch</a></p>
+      <div class="legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

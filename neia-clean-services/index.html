@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<script>
+  (function () {
+    var path = window.location.pathname;
+    if (/\.[a-zA-Z0-9]+$/.test(path)) { path = path.substring(0, path.lastIndexOf('/') + 1); }
+    else if (!path.endsWith('/')) { path = path + '/'; }
+    var base = document.createElement('base'); base.href = path; document.head.appendChild(base);
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Neia Clean Services — Reinigung für Privat & Gewerbe | Strengelbach</title>
+<meta name="description" content="Neia Clean Services: zuverlässige Gebäudereinigung in der Region Zofingen, Basel und der ganzen Nordwestschweiz. Unterhalts-, Büro-, Fenster- und Umzugsreinigung. Über 10 Jahre Erfahrung.">
+<meta name="theme-color" content="#2bb3bb">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neia Clean Services">
+<meta property="og:title" content="Neia Clean Services — Reinigung für Privat & Gewerbe">
+<meta property="og:description" content="Makellose Sauberkeit für Zuhause und Büro. Zuverlässig, pünktlich und persönlich in der Nordwestschweiz.">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:url" content="https://www.neiacleanservices.ch/">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Neia Clean Services",
+  "image":"https://www.neiacleanservices.ch/assets/logo.png",
+  "url":"https://www.neiacleanservices.ch/",
+  "telephone":"+41782697102",
+  "email":"neiacleanservices@hotmail.com",
+  "priceRange":"$$",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Hubelweg 6",
+    "postalCode":"4802",
+    "addressLocality":"Strengelbach",
+    "addressRegion":"AG",
+    "addressCountry":"CH"
+  },
+  "areaServed":["Strengelbach","Zofingen","Oftringen","Rothrist","Brittnau","Aarburg","Olten","Wikon","Egerkingen","Basel","Sissach","Rheinfelden","Nordwestschweiz"],
+  "description":"Zuverlässige Gebäudereinigung für Privathaushalte und Gewerbe in der Region Zofingen, Basel und der ganzen Nordwestschweiz.",
+  "sameAs":[
+    "https://www.facebook.com/profile.php?id=100092617323531",
+    "https://www.instagram.com/neia.clean.services/"
+  ],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Unterhalts- & Wohnungsreinigung"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bügelservice"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fensterreinigung"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Büroreinigung"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Umzug- & Endreinigung"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hauswartung & Treppenhausreinigung"}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Neia Clean Services Startseite">
+      <img src="assets/logo.webp" alt="Neia Clean Services Logo" width="120" height="64">
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <ul class="nav-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#bewertungen">Bewertungen</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#gebiet">Einsatzgebiet</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+41782697102">078 269 71 02</a>
+      <a class="btn btn-primary" href="#kontakt">Offerte anfragen</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#bewertungen">Bewertungen</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#gebiet">Einsatzgebiet</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#kontakt">Offerte anfragen</a>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Reinigung für Privat &amp; Gewerbe</span>
+      <h1>Makellose Sauberkeit, auf die Sie sich <span class="grad">verlassen</span> können.</h1>
+      <p class="lead">Neia Clean Services pflegt Ihr Zuhause, Ihr Büro und Ihre Geschäftsräume mit Sorgfalt, Erfahrung und einem persönlichen Service in der ganzen Nordwestschweiz.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#kontakt">Kostenlose Offerte
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="tel:+41782697102">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Anrufen
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Pünktlich &amp; zuverlässig</div>
+        <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Persönliche Beratung</div>
+        <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Hoher Qualitätsstandard</div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <span class="float-badge fb1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.2 8.6 2 9.2l5.5 4.7L5.8 21 12 17.3 18.2 21l-1.7-7.1L22 9.2l-7.2-.6z"/></svg> Top bewertet</span>
+      <span class="float-badge fb2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Seit 2022 registriert</span>
+      <div class="hero-card">
+        <img class="logo-big" src="assets/logo.webp" alt="Neia Clean Services" width="260" height="138">
+        <div class="hero-stats">
+          <div><div class="num" data-count="10" data-suffix="+">10+</div><div class="lab">Jahre Erfahrung</div></div>
+          <div><div class="num" data-count="13" data-suffix="">13</div><div class="lab">Orte im Einsatz</div></div>
+          <div><div class="num" data-count="100" data-suffix="%">100%</div><div class="lab">Sorgfalt</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="services" id="leistungen">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Unsere Leistungen</span>
+      <h2>Reinigungslösungen, die zu Ihnen passen</h2>
+      <p>Vom Privathaushalt bis zum Gewerbeobjekt: Wir passen jede Reinigung Ihren Bedürfnissen an und sorgen jedes Mal für ein makelloses Ergebnis.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 11l9-8 9 8M5 10v10h14V10M9 20v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Unterhalts- &amp; Wohnungsreinigung</h3>
+        <p>Zuverlässige Reinigungsunterstützung im Alltag: Staubwischen, Flächen-, Boden- und Küchenreinigung.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 14l7-7 4 4M14 11l4 4M3 14l-1 6 6-1 10-10-5-5L3 14z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Bügelservice</h3>
+        <p>Keine Zeit zum Bügeln? Unser persönlicher, flexibler Service spart Ihnen Zeit und sorgt für gepflegte Wäsche.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M3 12h18" stroke-linecap="round"/></svg></div>
+        <h3>Fensterreinigung</h3>
+        <p>Professionelle Fensterreinigung für klaren Durchblick, ohne Schmutz und Streifen, mit hochwertigen Mitteln.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6M7 11h.01M12 11h.01M17 11h.01" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Büroreinigung</h3>
+        <p>Optimale Unterhaltsreinigung für Ihr Unternehmen: anpassbar, detailliert und genau nach Ihrem Bedarf.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 16V8a2 2 0 0 1 2-2h10v10M15 11h4l2 3v2h-6M7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM17 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Umzug- &amp; Endreinigung</h3>
+        <p>Bei einem Umzug zählt jedes Detail. Wir übernehmen die Endreinigung zuverlässig, damit die Abgabe gelingt.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M6 3v18M6 7h6v4H6M18 9v12M18 12h-4M3 21h18" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Hauswartung &amp; Treppenhausreinigung</h3>
+        <p>Mit modernen Techniken halten wir Allgemeinräume und Treppenhäuser sauber, sicher und gepflegt.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section class="reviews" id="bewertungen">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Bewertungen</span>
+      <h2>Was unsere Kundinnen und Kunden sagen</h2>
+      <p>Echte Rückmeldungen aus der ganzen Region — von Strengelbach bis Basel.</p>
+    </div>
+  </div>
+  <div class="marquee reveal">
+    <div class="marquee-track" id="revTrack">
+      <!-- set A -->
+      <div class="rev"><div class="stars">★★★★★</div><p>Perfektionistin, pünktlich, freundlich, zuverlässig und sehr sauber. Jedes Mal, wenn sie zu uns nach Hause kommt, ist es wunderbar.</p><div class="who">Nadine N.<span>Sissach</span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Andreia ist eine tolle Hilfe im Haushalt: gründlich, engagiert, hilfsbereit, zuverlässig, pünktlich und nett. Zu unserer vollsten Zufriedenheit.</p><div class="who">Heidi R.<span>Ziefen</span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Unsere Fenster und Storen glänzen wieder. Sehr empfehlenswert! Profis, Detaillisten und sehr freundlich. Wir kontaktieren Neia gerne erneut.</p><div class="who">J. Leite<span>Rothrist · Fensterreinigung</span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Seit wir in Strengelbach wohnen, lassen wir die Wohnung durch Neia Clean Services reinigen. Alles zu unserer vollsten Zufriedenheit. Preis-Leistung top!</p><div class="who">K. H.<span>Strengelbach</span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Tolles Preis-Leistungs-Verhältnis, freundlicher Austausch und umfassende Erfüllung des Auftrages. Sehr zu empfehlen.</p><div class="who">S. Mazzara<span>Rheinfelden · Umzugsreinigung</span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Immer wieder freue ich mich, wenn Andreia und ihr Team kommt und nachher alles in allen Ecken sauber ist und glänzt. Sehr guter Job, flexibel und freundlich.</p><div class="who">Rita A.<span>Brittnau</span></div></div>
+      <!-- set B (duplicate for seamless loop) -->
+      <div class="rev" aria-hidden="true"><div class="stars">★★★★★</div><p>Perfektionistin, pünktlich, freundlich, zuverlässig und sehr sauber. Jedes Mal, wenn sie zu uns nach Hause kommt, ist es wunderbar.</p><div class="who">Nadine N.<span>Sissach</span></div></div>
+      <div class="rev" aria-hidden="true"><div class="stars">★★★★★</div><p>Andreia ist eine tolle Hilfe im Haushalt: gründlich, engagiert, hilfsbereit, zuverlässig, pünktlich und nett. Zu unserer vollsten Zufriedenheit.</p><div class="who">Heidi R.<span>Ziefen</span></div></div>
+      <div class="rev" aria-hidden="true"><div class="stars">★★★★★</div><p>Unsere Fenster und Storen glänzen wieder. Sehr empfehlenswert! Profis, Detaillisten und sehr freundlich. Wir kontaktieren Neia gerne erneut.</p><div class="who">J. Leite<span>Rothrist · Fensterreinigung</span></div></div>
+      <div class="rev" aria-hidden="true"><div class="stars">★★★★★</div><p>Seit wir in Strengelbach wohnen, lassen wir die Wohnung durch Neia Clean Services reinigen. Alles zu unserer vollsten Zufriedenheit. Preis-Leistung top!</p><div class="who">K. H.<span>Strengelbach</span></div></div>
+      <div class="rev" aria-hidden="true"><div class="stars">★★★★★</div><p>Tolles Preis-Leistungs-Verhältnis, freundlicher Austausch und umfassende Erfüllung des Auftrages. Sehr zu empfehlen.</p><div class="who">S. Mazzara<span>Rheinfelden · Umzugsreinigung</span></div></div>
+      <div class="rev" aria-hidden="true"><div class="stars">★★★★★</div><p>Immer wieder freue ich mich, wenn Andreia und ihr Team kommt und nachher alles in allen Ecken sauber ist und glänzt. Sehr guter Job, flexibel und freundlich.</p><div class="who">Rita A.<span>Brittnau</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="ueber-uns">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow">Über uns</span>
+      <h2 style="font-size:clamp(1.7rem,4vw,2.6rem);font-weight:700;margin-bottom:18px">Ihr zuverlässiger Partner in der Nordwestschweiz</h2>
+      <p>Neia Clean Services ist Ihr Partner für Reinigungsdienstleistungen in der Region Zofingen, Basel und der ganzen Nordwestschweiz. Mit über 10 Jahren Erfahrung und seit November 2022 registriert stehen wir für Kompetenz, Freundlichkeit und persönlichen Service.</p>
+      <p>Wir führen alle Arbeiten zuverlässig und pünktlich aus und garantieren einen hohen Qualitätsstandard. Unser Ziel ist eine kompetente Beratung und Reinigungslösungen, die genau auf Ihre Bedürfnisse zugeschnitten sind.</p>
+      <ul class="about-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Über 10 Jahre Erfahrung in der Gebäudereinigung</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Persönlicher Kontakt — Sie kennen Ihr Team</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Flexibel, diskret und auf Wunsch kurzfristig</li>
+      </ul>
+    </div>
+    <div class="about-visual reveal">
+      <div class="q">„Ein sauberes Zuhause vermittelt ein Gefühl des Wohlbefindens — genau das schaffen wir für Sie.“</div>
+      <div class="sig">— Andreia &amp; Team, Neia Clean Services</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Service area ===== -->
+<section class="area" id="gebiet">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Einsatzgebiet</span>
+      <h2>In Ihrer Region im Einsatz</h2>
+      <p>Wir sind in der ganzen Nordwestschweiz für Sie unterwegs — unter anderem in:</p>
+    </div>
+    <div class="area-tags reveal">
+      <span class="hl">Strengelbach</span><span>Zofingen</span><span>Oftringen</span><span>Rothrist</span>
+      <span>Brittnau</span><span>Aarburg</span><span>Olten</span><span>Wikon</span>
+      <span>Egerkingen</span><span>Basel</span><span>Sissach</span><span>Frenkendorf</span>
+      <span>Ziefen</span><span>Bottmingen</span><span>Rheinfelden</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="kontakt">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Bereit für ein sauberes Resultat?</h2>
+      <p class="lead">In einem sauberen, duftenden Zuhause zu leben und in einem organisierten Büro zu arbeiten, ist ein wunderbares Gefühl. Fordern Sie jetzt unverbindlich Ihre Offerte an.</p>
+      <ul class="cinfo-list">
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><a href="tel:+41782697102">078 269 71 02</a><small>Mo–Sa erreichbar</small></div>
+        </li>
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><a href="mailto:neiacleanservices@hotmail.com">neiacleanservices@hotmail.com</a><small>Antwort innert 24 h</small></div>
+        </li>
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><span>Hubelweg 6, 4802 Strengelbach</span><small>Region Zofingen / Nordwestschweiz</small></div>
+        </li>
+      </ul>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100092617323531" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/neia.clean.services/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-card reveal">
+      <form id="contactForm" novalidate>
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="Neue Offertenanfrage – Neia Clean Services">
+        <input type="hidden" name="from_name" value="Neia Clean Services Website">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text" required placeholder="Ihr Name">
+        </div>
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input id="phone" name="telefon" type="tel" placeholder="079 000 00 00">
+        </div>
+        <div class="field">
+          <label for="email">E-Mail *</label>
+          <input id="email" name="email" type="email" required placeholder="ihre@email.ch">
+        </div>
+        <div class="field">
+          <label for="message">Nachricht *</label>
+          <textarea id="message" name="nachricht" required placeholder="Beschreiben Sie kurz, was Sie benötigen (Objekt, Fläche, gewünschter Termin)…"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center" id="submitBtn">Offerte anfragen</button>
+        <p class="form-note">Mit dem Absenden stimmen Sie der Bearbeitung Ihrer Angaben gemäss unserer Datenschutzerklärung zu.</p>
+        <div class="form-msg" id="formMsg" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo.webp" alt="Neia Clean Services" width="130" height="69"></a>
+        <p style="margin-top:16px;max-width:34ch">Zuverlässige Reinigung für Privathaushalte und Gewerbe in der ganzen Nordwestschweiz.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul class="foot-links">
+          <li><a href="#leistungen">Unterhaltsreinigung</a></li>
+          <li><a href="#leistungen">Fensterreinigung</a></li>
+          <li><a href="#leistungen">Büroreinigung</a></li>
+          <li><a href="#leistungen">Umzugsreinigung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul class="foot-links">
+          <li><a href="tel:+41782697102">078 269 71 02</a></li>
+          <li><a href="mailto:neiacleanservices@hotmail.com">E-Mail schreiben</a></li>
+          <li>Hubelweg 6, 4802 Strengelbach</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="site-credit">© <span id="year"></span> Neia Clean Services · Website by
+        <a href="https://www.vodnik.ch" target="_blank" rel="noopener">www.vodnik.ch</a>
+      </p>
+      <div class="legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // header shadow on scroll
+  var header = document.querySelector('.site-header');
+  window.addEventListener('scroll', function(){ header.classList.toggle('scrolled', window.scrollY > 8); }, {passive:true});
+
+  // mobile menu
+  var burger = document.getElementById('burger'), menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open'); burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }); });
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); }, {threshold:.14});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // counters
+  var counted = false;
+  function runCounters(){
+    if(counted) return; counted = true;
+    document.querySelectorAll('.num[data-count]').forEach(function(el){
+      var target = +el.dataset.count, suffix = el.dataset.suffix || '', dur = 1400, t0 = null;
+      function step(ts){ if(!t0) t0 = ts; var p = Math.min((ts-t0)/dur,1); var val = Math.round((1-Math.pow(1-p,3))*target);
+        el.textContent = val + suffix; if(p<1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    });
+  }
+  var heroStats = document.querySelector('.hero-stats');
+  if(heroStats){ var io2 = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ runCounters(); io2.disconnect(); } }); }, {threshold:.4}); io2.observe(heroStats); }
+
+  // form (Web3Forms)
+  var form = document.getElementById('contactForm'), msg = document.getElementById('formMsg'), btn = document.getElementById('submitBtn');
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    msg.className = 'form-msg';
+    if(form.botcheck.checked) return;
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    btn.disabled = true; var old = btn.textContent; btn.textContent = 'Wird gesendet…';
+    try{
+      var data = Object.fromEntries(new FormData(form).entries());
+      var res = await fetch('https://api.web3forms.com/submit', {
+        method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body:JSON.stringify(data)
+      });
+      var out = await res.json();
+      if(out.success){
+        msg.className = 'form-msg ok';
+        msg.textContent = 'Vielen Dank! Ihre Anfrage ist eingegangen — wir melden uns in Kürze bei Ihnen.';
+        form.reset();
+      } else {
+        msg.className = 'form-msg err';
+        msg.textContent = 'Es gab ein Problem beim Senden. Bitte rufen Sie uns an: 078 269 71 02.';
+      }
+    } catch(err){
+      msg.className = 'form-msg err';
+      msg.textContent = 'Es gab ein Problem beim Senden. Bitte rufen Sie uns an: 078 269 71 02.';
+    } finally { btn.disabled = false; btn.textContent = old; }
+  });
+</script>
+</body>
+</html>
